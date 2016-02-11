@@ -15,7 +15,7 @@ As a student and a curious person I love the idea of Open Source code because I 
 Licenses can also be important to protect programs with sensative uses or information or to generate the income needed to sustain a business or individual programmer.
 
 ## What concepts were solidified in the challenge? Did you have any "aha" moments? What did you struggle with?
-This exercise helped to cement my abilities working with branches and git. I did have several aha moments as it worked.
+This exercise helped to cement my abilities working with branches and git. I did have several aha moments as it worked. I made it without any big struggles, just some flipping back through my notes.
 
 ## Did you find any resources on your own that helped you better understand a topic? If so, please list it.
 The provided link to Markdown was helpful in creating these headings
