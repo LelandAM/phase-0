@@ -1,4 +1,4 @@
-![Leland Site Map](/Users/LiziCloud/DevBootcamp/phase-0/week-2/imgs/SiteMap.png)
+![Leland Site Map](imgs/SiteMap.png)
 
 ## What are the 6 Phases of Web Design?
 
