@@ -1,0 +1,75 @@
+body {
+  color:#000080; background-color:#ffffff; text-align: center;
+}
+
+a {
+  color:#800080;
+}
+
+a:visited {
+  color:#ff0000;
+}
+
+.description {
+  font-size: 8px; color:
+}
+
+table{
+  margin-left:50px; text-align:left;
+}
+
+li{
+  margin:10px;
+}
+
+h1{
+  font-weight: bold; font-size: 18px; margin-bottom: 0px;
+}
+
+h3{
+  font-size: 14px; margin: 0px;
+}
+
+h2{
+  font-size: 16px; margin: 0px;
+}
+
+#letter {
+  font-size: 36px;
+}
+
+.geico{
+  font-weight:normal; font-size: 10px; margin: 0px;
+}
+
+img{
+  margin-top:10px;
+}
+
+.comment{
+  font-size: 12px;
+  text-align: left;
+}
+
+div {
+      margin-top: 20px; border-bottom: 1px solid black; width: 100%;
+}
+
+footer{
+  text-align:left;
+}
+
+.portrait{
+  height:150px; width:150px;
+}
+/* What is important to know when linking an external file (like a stylesheet) to an HTML file? You need to know the name of the file and the path from the .html doc to the .css file.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it? margin and float were the most useful moving things around, trial and error is the most effective way to get the design where you need it.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+We used size, hex color, and different alignments, we had to un-bold a section and used font-weight:normal to do so. We left the font he way it was to match the original site and used a table to arrange the links but there wasn't a lot of element styling to be done.
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML? We used both class and id. ID has the most priority so we used that in the most embedded element, the capital letters in the title, we used class to denote specific lines that needed to change because some others were embedded similarly and a "p h1" selector wasn't specific enough.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why? The original. With a complex site it would be a nightmare to attempt all the styling in html but this is so simple that it seems more structurally sound to have all the code in one place, it's only a simple page and it seems like overkill to use css styling when you could just ust <hr> for a line and <p align="center"> to center something.
+
+*/
