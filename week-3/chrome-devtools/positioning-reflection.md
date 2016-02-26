@@ -3,7 +3,7 @@
 ## Exercise Screenshots
 
 Exercise 1:
-![alt text][logo](imgs/3.4-1.png "3.4-1.png")
+![alt text][logo](phase-0/week-3/chrome-devtools/imgs/3.4-1.png "3.4-1.png")
 Exercise 2:
 ![alt text][logo](imgs/3.4-2.png "3.4-2.png")
 Exercise 3:
