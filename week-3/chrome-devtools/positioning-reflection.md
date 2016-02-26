@@ -3,23 +3,23 @@
 ## Exercise Screenshots
 
 Exercise 1:
-![3.4-1](phase-0/week-3/chrome-devtools/imgs/3.4-1.png)
+![3.4-1](https://github.com/LelandAM/phase-0/blob/master/week-3/chrome-devtools/imgs/3.4-1.png)
 Exercise 2:
-![alt text][logo](imgs/3.4-2.png "3.4-2.png")
+![3.4-2](https://github.com/LelandAM/phase-0/blob/master/week-3/chrome-devtools/imgs/3.4-2.png)
 Exercise 3:
-![alt text][logo](imgs/3.4-3.png "3.4-3.png")
+![3.4-3](https://github.com/LelandAM/phase-0/blob/master/week-3/chrome-devtools/imgs/3.4-3.png)
 Exercise 4:
-![alt text][logo](imgs/3.4-4.png "3.4-4.png")
+![3.4-4](https://github.com/LelandAM/phase-0/blob/master/week-3/chrome-devtools/imgs/3.4-4.png)
 Exercise 5:
-![alt text][logo](imgs/3.4-5.png "3.4-5.png")
+![3.4-5](https://github.com/LelandAM/phase-0/blob/master/week-3/chrome-devtools/imgs/3.4-5.png)
 Exercise 6:
-![alt text][logo](imgs/3.4-6.png "3.4-6.png")
+![3.4-6](https://github.com/LelandAM/phase-0/blob/master/week-3/chrome-devtools/imgs/3.4-6.png)
 Exercise 7:
-![alt text][logo](imgs/3.4-7.png "3.4-7.png")
+![3.4-7](https://github.com/LelandAM/phase-0/blob/master/week-3/chrome-devtools/imgs/3.4-7.png)
 Exercise 8:
-![alt text][logo](imgs/3.4-8.png "3.4-8.png")
+![3.4-8](https://github.com/LelandAM/phase-0/blob/master/week-3/chrome-devtools/imgs/3.4-8.png)
 Exercise 9:
-![alt text][logo](imgs/3.4-9.png "3.4-9.png")
+![3.4-9](https://github.com/LelandAM/phase-0/blob/master/week-3/chrome-devtools/imgs/3.4-9.png)
 
 ## Reflection
 
