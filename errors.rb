@@ -47,124 +47,153 @@
 
 # --- error -------------------------------------------------------
 
-cartman()
+#cartman()
 
-# 1. What is the line number where the error occurs?
-#
-# 2. What is the type of error message?
-#
-# 3. What additional information does the interpreter provide about this type of error?
-#
-# 4. Where is the error in the code?
-#
-# 5. Why did the interpreter give you this error?
-#
-
-# --- error -------------------------------------------------------
-
-def cartmans_phrase
-  puts "I'm not fat; I'm big-boned!"
-end
-
-cartmans_phrase('I hate Kyle')
-
-# 1. What is the line number where the error occurs?
-#
-# 2. What is the type of error message?
-#
-# 3. What additional information does the interpreter provide about this type of error?
-#
-# 4. Where is the error in the code?
-#
-# 5. Why did the interpreter give you this error?
-#
+# 1. What is the line number where the error occurs? 
+#        50
+# 2. What is the type of error message? 
+#        Undefined Method
+# 3. What additional information does the interpreter provide about this type of error? 
+#         type of error, line the error occurs on, and where in the line
+# 4. Where is the error in the code? 
+#         the main object isn't defined as a method
+# 5. Why did the interpreter give you this error?  
+#         It errors because it's an incomplete method, it needs def and end
 
 # --- error -------------------------------------------------------
 
-def cartman_says(offensive_message)
-  puts offensive_message
-end
+#def cartmans_phrase
+#  puts "I'm not fat; I'm big-boned!"
+#end
 
-cartman_says
+#cartmans_phrase('I hate Kyle')
 
 # 1. What is the line number where the error occurs?
-#
+#         65
 # 2. What is the type of error message?
-#
+#         Argument Error
 # 3. What additional information does the interpreter provide about this type of error?
-#
+#         it wasn't expecting an argument
 # 4. Where is the error in the code?
-#
+#         it wasn't expecting input
 # 5. Why did the interpreter give you this error?
-#
+#         you need add parenthesis and define that input so it expects it and knows what to do with it.
+
+# --- error -------------------------------------------------------
+
+#def cartman_says(offensive_message)
+#  puts offensive_message
+#end
+
+#cartman_says
+
+# 1. What is the line number where the error occurs?
+#     84
+# 2. What is the type of error message?
+#     Argument Error
+# 3. What additional information does the interpreter provide about this type of error?
+#     It says it was expecting an argument and didn't get one
+# 4. Where is the error in the code?
+#     There needs to be input for "offensive_message"
+# 5. Why did the interpreter give you this error?
+#     It was expecting offensive_message input and didn't get it
 
 
 
 # --- error -------------------------------------------------------
 
-def cartmans_lie(lie, name)
-  puts "#{lie}, #{name}!"
-end
+#def cartmans_lie(lie, name)
+#  puts "#{lie}, #{name}!"
+#end
 
-cartmans_lie('A meteor the size of the earth is about to hit Wyoming!')
+#cartmans_lie('A meteor the size of the earth is about to hit Wyoming!')
 
 # 1. What is the line number where the error occurs?
-#
+#     105
 # 2. What is the type of error message?
-#
+#     Argument Error
 # 3. What additional information does the interpreter provide about this type of error?
-#
+#     It was expecting two arguments and got 1
 # 4. Where is the error in the code?
-#
+#     in the parenthesis, you either need to delete the name argument in the method or add a name when you run the method
 # 5. Why did the interpreter give you this error?
-#
+#     It wants a name entered along with a lie.
 
 # --- error -------------------------------------------------------
 
-5 * "Respect my authoritay!"
+#5 * "Respect my authoritay!"
 
 # 1. What is the line number where the error occurs?
-#
+#      124
 # 2. What is the type of error message?
-#
+#      Type Error
 # 3. What additional information does the interpreter provide about this type of error?
-#
+#      It says a number can't be multiplied by a string
 # 4. Where is the error in the code?
-#
+#      The string and integer need to switch places
 # 5. Why did the interpreter give you this error?
-#
+#       because you cannot multiply the integer 5 by "Respect my authority" but you can multiply "Respect my Authority" by 5
 
 # --- error -------------------------------------------------------
 
-amount_of_kfc_left = 20/0
+#amount_of_kfc_left = 20/0
 
 
 # 1. What is the line number where the error occurs?
-#
+#      139
 # 2. What is the type of error message?
-#
+#      Zero Division Error
 # 3. What additional information does the interpreter provide about this type of error?
-#
+#      it says it was told to divide something by zero which is impossible
 # 4. Where is the error in the code?
-#
+#      the algorhythm is impossible
 # 5. Why did the interpreter give you this error?
-#
+#      because nothing can be divided by zero
 
 # --- error -------------------------------------------------------
 
-require_relative "cartmans_essay.md"
+#require_relative "cartmans_essay.md"
 
 # 1. What is the line number where the error occurs?
-#
+#     155
 # 2. What is the type of error message?
-#
+#     Load Error
 # 3. What additional information does the interpreter provide about this type of error?
-#
+#     it says its can't load the file it's being asked to
 # 4. Where is the error in the code?
-#
+#     it could be mis-spelled, it might not exist, or it might be in a different directory
 # 5. Why did the interpreter give you this error?
-#
+#     it can't find the file cartmans_essay.md
 
 
 # --- REFLECTION -------------------------------------------------------
 # Write your reflection below as a comment.
+# Which error was the most difficult to read?
+# They were all easily identified with rspec. 
+
+# How did you figure out what the issue with the error was?
+# rspec lists what the error is and where it is, with my basic knowledge of methods it was easy to see what was missing.
+
+# Were you able to determine why each error message happened based on the code? 
+# Yes
+
+# When you encounter errors in your future code, what process will you follow to help you debug?
+# I'll use rspec to identify errors, clean formatting so problems are easier to identify, and if I can't figure it out I'll use a fresh pair of eyes from a friend or message board. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
