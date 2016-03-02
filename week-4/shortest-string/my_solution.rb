@@ -12,5 +12,5 @@
 
 #Your Solution Below
 def shortest_string(list_of_words)
-  p list_of_words.
+  p list_of_words.length.min
 end
