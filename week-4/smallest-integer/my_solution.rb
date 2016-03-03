@@ -12,6 +12,13 @@
 
 # Your Solution Below
 def smallest_integer(list_of_nums)
-  p list_of_nums.min
+  smallest=list_of_nums[0]
+
+  list_of_nums.each do |num|
+  	if num < smallest
+  		smallest = num
+  	end	
 end
 
+return smallest
+end
