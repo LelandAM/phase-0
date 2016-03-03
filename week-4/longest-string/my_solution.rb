@@ -10,8 +10,26 @@
 #
 # If +list_of_words+ is empty the method should return nil
 
+def longest_string(list_of_words)
+  longest = list_of_words[0]
+
+  list_of_words.each do |word|
+    if word.length > longest.length
+        longest = word
+  end
+end
+
+return longest
+end
+
+
+
 
 # Your Solution Below
-def longest_string(list_of_words)
-  # Your code goes here!
-end
+#def longest_string(list_of_words)
+#  if list_of_words == 0
+#  	nil
+#  else 
+#  	list_of_words.sort_by(&:length).last
+#  end	
+#end

@@ -1,6 +1,6 @@
 # Shortest String
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge myself.
 
 # shortest_string is a method that takes an array of strings as its input
 # and returns the shortest string
@@ -11,6 +11,23 @@
 # If +list_of_words+ is empty the method should return nil
 
 #Your Solution Below
+
 def shortest_string(list_of_words)
-  p list_of_words.length.min
+  shortest = list_of_words[0]
+
+  list_of_words.each do |word|
+    if word.length < shortest.length
+        shortest = word
+  end
 end
+
+return shortest
+end
+
+#def shortest_string(list_of_words)
+#  if list_of_words == 0
+#  		nil
+#  	else
+#  		list_of_words.sort_by(&:length).first
+#	end
+#end
