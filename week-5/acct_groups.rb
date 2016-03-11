@@ -19,16 +19,16 @@
 # Release 2: Initial Solution
 
 def group_maker(name_array)
-	names = name_array #non-destructive
-	names.sort_by {rand} #randomize so abby, alex, and ashley don't always get stuck together
-	group_size = names.count #how many names do we have to split?
-	if group_size % 5 == 0 || group_size % 5 >= 3 #can you split the names into groups of 5 with a remaining group of 3 or more?
-		names.each_slice(5) {|slice| p slice}  #if so, split the list into groups of 5, print each on its own line
-	elsif group_size % 4 == 0 || group_size % 4 >= 3 #can you split the names into groups of 4 with a remaining group of 3 or more?	
-		names.each_slice(4) {|slice| p slice}  #if so, split the list into groups of 4, print each on its own line
-	else group_size % 4 == 0 || group_size % 4 >= 3	#if you can't split them into nice groups of 3-5 at least split them into groups of four 
+	names = name_array 
+	names.sort_by {rand} 
+	group_size = names.count 
+	if group_size % 5 == 0 || group_size % 5 >= 3 
+		names.each_slice(5) {|slice| p slice}  
+	elsif group_size % 4 == 0 || group_size % 4 >= 3 
+		names.each_slice(4) {|slice| p slice}  
+	else group_size % 4 == 0 || group_size % 4 >= 3	
 		names.each_slice(4) {|slice| p slice}
-		   p "split up this last group and assign them to others"  #with a message to divide the remainders up into other groups.
+		   p "split up this last group and assign them to others"  
 		  
 	end
 end
@@ -46,6 +46,20 @@ group_maker(["tom", "james", "bobby", "ryan", "kevin", "ray", "jay", "faye", "ka
 		
 # Release 4: Refactor
 
+# def group_maker(name_array)
+# 	names = name_array #non-destructive
+# 	names.sort_by {rand} #randomize so abby, alex, and ashley don't always get stuck together
+# 	group_size = names.count #how many names do we have to split?
+# 	if group_size % 5 == 0 || group_size % 5 >= 3 #can you split the names into groups of 5 with a remaining group of 3 or more?
+# 		names.each_slice(5) {|slice| p slice}  #if so, split the list into groups of 5, print each on its own line
+# 	elsif group_size % 4 == 0 || group_size % 4 >= 3 #can you split the names into groups of 4 with a remaining group of 3 or more?	
+# 		names.each_slice(4) {|slice| p slice}  #if so, split the list into groups of 4, print each on its own line
+# 	else group_size % 4 == 0 || group_size % 4 >= 3	#if you can't split them into nice groups of 3-5 at least split them into groups of four 
+# 		names.each_slice(4) {|slice| p slice}
+# 		   p "split up this last group and assign them to others"  #with a message to divide the remainders up into other groups.
+		  
+# 	end
+# end
 
 
 # Release 6: Reflect
@@ -66,4 +80,4 @@ group_maker(["tom", "james", "bobby", "ryan", "kevin", "ray", "jay", "faye", "ka
 # I stored them in a meta array because we use integer names for accountability groups
 
 # What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods?	
-
+# I am sure there are other hash methods or ennumerables that will help but this is all I've got for now.
