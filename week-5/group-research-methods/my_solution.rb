@@ -5,7 +5,7 @@
 # i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
 # my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
 
-# 
+#
 # # Person 1's solution (Patrick DeWitte)
 # # Input: Array
 # # Output: New array of words from initial array that conatain a letter
@@ -40,33 +40,58 @@
 # .select (similar to .find_all) iterates over the array/hash, and allows you to operate on its output
  # with a subsequent code block. In this case, we used .select to find all the words in an array (source)
  #  that included a certain letter (thing_to_find). These methods inherently return a new array. In the block,
- #   we selected only the words that included (thing_to_find) to be returned to the new array which is 
+ #   we selected only the words that included (thing_to_find) to be returned to the new array which is
  #   inherently created by .select.
 
 # Also used was the .key (.keys) method. When passed to a hash, it returns the key of a specified value.
-# In this case, source.select inherently created a new hash (since .select was passed to a hash, not an array). 
-#   What we needed was an array, so we called .keys on pet_hash, and it returned the keys of pet_hash in a new 
+# In this case, source.select inherently created a new hash (since .select was passed to a hash, not an array).
+#   What we needed was an array, so we called .keys on pet_hash, and it returned the keys of pet_hash in a new
 #   array that we called pet_array.
 
-# # Person 2
+# Person 2
 # def my_array_modification_method!(source, thing_to_modify)
-#   source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+#   #find values in source container that's an integer
+#   #if integer, replace with integer + thing_to_modify
+#   source.map! do |value|
+#     type = value.class
+#     if type == Fixnum
+#       value = value + thing_to_modify
+#     else
+#       value
+#     end
+#   end
 # end
 
 # def my_hash_modification_method!(source, thing_to_modify)
-#   source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+#   new_source = Hash.new
+#   source.each do |x,y|
+#       y = y + thing_to_modify
+#       source_new = {x => y}
+#       source.merge!(source_new)
+#   end
+#   return source
 # end
 
-# # Identify and describe the Ruby method(s) you implemented.
-# #
-# #
-# #
+# Identify and describe the Ruby method(s) you implemented.
+
+# For the array modification, we needed to figure out a way to permenantly
+# alter integers of the array. My thought process was to isolate integer
+# values and modify them, so I started by using a if statement. I used a class
+# method to determine if the value was an integer. If it was, I used the map
+# method. Map! allows you to create a new array based on an existing array,
+# but with values modified depending on what input is given. In this case, the
+# input was to keep the same value for non-integers and to add a given value
+# for integers. For the hash modification, I created an empty hash to be
+# populated by a modified version of the given hash. I added the given value
+# to the existing value of the hash. Then, I used the merge method to combine
+# the new hash with the old one. This replaces the value of the old hash with
+# the new.
 
 
 # Person 3
 
 # Pseudo Code-
-# Alphabetize: 
+# Alphabetize:
 # input: array of pets and their ages (i_want_pets)
 # method: assign a variable so its non destructive, convert to string, have sort iterate through the array
 # output: the alphabetized array
@@ -82,10 +107,10 @@
 
 #######ALPHABETIZE#############
 def my_array_sorting_method(source)
-  sorted_array = source.sort_by { |a| a.to_s} 
+  sorted_array = source.sort_by { |a| a.to_s}
 end
-   
-# i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]   
+
+# i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
 # my_array_sorting_method(i_want_pets)
 
 ########SORT-BY-AGE#############
@@ -134,22 +159,22 @@ end
 # end
 
 # Identify and describe the Ruby method(s) you implemented.
-# The method I used is the partition method which takes an object or block and 
-# breaks it down into 2 arrays. The first array contains elements that evaluates 
+# The method I used is the partition method which takes an object or block and
+# breaks it down into 2 arrays. The first array contains elements that evaluates
 # to true while the second array contains the rest.
 
-# Release 1: Identify and describe the Ruby method you implemented. Teach your accountability group 
-# how to use the methods. The method I used is the partition method. First you first create 2 variables 
-# which will be the 2 arrays we separate the source into later. Then you set the 2 variables equal to the 
-# array or hash parameter. In our above example, the parameter is named "source", next we call the method 
-# (source.partition). Then we create a variable (or 2 variables for hashes) which points to each element 
-# we pass to the partition method and lastly we set the condition we want to evaluate as true. The method 
-# will evaluate each element and if it's true, sends it to the first array and if it's not true, sends it 
+# Release 1: Identify and describe the Ruby method you implemented. Teach your accountability group
+# how to use the methods. The method I used is the partition method. First you first create 2 variables
+# which will be the 2 arrays we separate the source into later. Then you set the 2 variables equal to the
+# array or hash parameter. In our above example, the parameter is named "source", next we call the method
+# (source.partition). Then we create a variable (or 2 variables for hashes) which points to each element
+# we pass to the partition method and lastly we set the condition we want to evaluate as true. The method
+# will evaluate each element and if it's true, sends it to the first array and if it's not true, sends it
 # to the second array.
 
 # Release 3: Reflect! What did you learn about researching and explaining your research to others?
 # I googled for "ruby separate array into two arrays two conditions", basically describing
-# what I'm trying to achieve. The first link showed me the partition method and then I went 
+# what I'm trying to achieve. The first link showed me the partition method and then I went
 # to Ruby Docs to read if the method does what I want and it does!
 
 
