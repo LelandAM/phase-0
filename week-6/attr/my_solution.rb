@@ -18,26 +18,26 @@
 class NameData
   attr_accessor :name
 
-  def initialize
-    puts "What's your name?"
-    @name = gets.chomp.to_s
+  def initialize(name)
+    @name = name
    end
 end
 
 
 class Greetings
-  def initialize
-    @name = NameData.new
+  def initialize(insert_name)
+    @insert_name = NameData.new(insert_name)
   end
 
   def hello
-    puts 'Hello ' + @name + '! How wonderful to see you today.'
+    puts 'Hello #{@insert_name}! How wonderful to see you today.'
   end
 end
 
 
-greet = Greetings.new
-greet.hello
+greet = Greetings.new("Student")
+p greet.hello
+
 
 
 
