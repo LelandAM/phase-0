@@ -48,15 +48,10 @@ console.log(min(0, -10));
 
 var me = {
   name: "Leland",
-  rest: {
-    age: 29,
-    rest: {
-      favFoods: "Italian Beef, pizza, chili",
-      rest: {
-        quirk: "I collect everything!"
-      }
-    }
-  }
+  age: 29,
+  favFoods: ["Italian Beef", "Pizza", "Chili"],
+  quirk: "I collect everything!"
 }
+
 
 

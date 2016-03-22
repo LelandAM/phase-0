@@ -44,7 +44,15 @@ adam["children"] = terah["children"]
 // __________________________________________
 // Reflection: Use the reflection guidelines
 //
-//
+//What tests did you have trouble passing? What did you do to make it pass? Why did that work?
+// --I had trouble passing the child object test. I tried var colton = {name: "Colton"} but it didn't work so eventually I set him as an onject as he was nested as one of terah's children.
+
+//How difficult was it to add and delete properties outside of the object itself?
+//--turns out it's pretty easy, call the object and name and reset what it's equal to.
+
+//What did you learn about manipulating objects in this challenge?
+// --you can assign value to an object in the same breath as you set it as a value to another object.
+
 //
 //
 //
