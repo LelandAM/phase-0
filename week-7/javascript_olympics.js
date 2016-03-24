@@ -11,6 +11,11 @@
 
 
 // Bulk Up
+// var sarah = {
+// 	name: "Sarah Hughes",
+// 	event: "Ladies' Singles"
+// };
+
 //  var addWin = function(athletes) {
 //  	for (i in athletes){
 //  		athletes[i] = athletes[i].name +" won the "+ athletes[i].event + "!";
@@ -19,10 +24,6 @@
 //  	console.log(athletes);
 //  };
 
-// var sarah = {
-// 	name: "Sarah Hughes",
-// 	event: "Ladies' Singles"
-// };
 
 // addWin([sarah]);
 
@@ -32,6 +33,7 @@
 // var jumbler = function(myString) {
 // 	console.log(myString.split("").reverse().join(""))
 // 	return myString.split("").reverse().join("")
+	
 // }
 
 // var myString = "Jumble This"
@@ -40,17 +42,17 @@
 
 // 2,4,6,8
 
-	// function evens(numbers){
-	// 	for (var i = 0; i < numbers.length; i++){
-	// 		if (numbers[i] % 2 == 0){
-	// 			console.log(numbers[i])
+// function evens(numbers){
+// 	for (var i = 0; i < numbers.length; i++){
+// 		if (numbers[i] % 2 == 0){
+// 			console.log(numbers[i])
 				
-	// 		};
-	// 	}
-	// }
-	// var numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+// 		};
+// 	}
+// }
+// var numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 
-	// evens(numbers)
+// evens(numbers)
 			
 
 
