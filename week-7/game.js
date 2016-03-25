@@ -26,35 +26,78 @@
 
 // Initial Code
 
-var player = {
-  HP: 10,
-  position: 4,
-  score: 0,
-  tackle: false
-}
+
+// var myThrow = 2
+// var MyThrow = prompt("Where are you throwing? (1-6)")
 
 var theDonald = {
   HP: 30,
-  position: 2
+  position: 2,
+  crowd: 2,
+
+  toss: function(myThrow) {
+    theDonald.position = Math.floor(Math.random() * 5) + 1;
+    console.log("He's in position " + theDonald.position + "!"),
+
+  tackle = function() {  
+      
+      if((Math.floor(Math.random() * 5) + 1) % 2 === 0) {
+        console.log("You've been tackled, game over!");
+      }
+      else{
+        console.log("keep throwing!")
+        theDonald.toss(myThrow)
+      } 
+    }
+  
+    if(theDonald.position === myThrow) {
+      console.log("Direct Hit! 1,000,000 Points!");
+      theDonald.HP -= 10;
+      console.log("Trump HP:" + theDonald.HP)
+
+        if(theDonald.HP === 0){
+          console.log("Three In A Row! You Win!")
+        }
+        else{
+          theDonald.toss(myThrow)
+        }     
+    }
+
+    else{
+      console.log("You missed! Look out!");
+      tackle()
+    } 
+  }
 }
 
-var nameOne = throw(){
-  theDonald.position = Math.floor(Math.random() * 5) + 1
-  tomato.position = Math.floor(Math.random() * 5) + 1
-};
+var myThrow = 2
 
-  if( theDonald.position === player.position){
-    console.log("Direct Hit! 1000 Points!")
-    theDonald.HP -= 10
-    player.score += 1000
-  }
-  else{
-    console.log("You missed! Look out!")
-  }
+theDonald.toss(myThrow.position)
 
-var nameTwo = tackle(){
 
-};
+
+// BASH DEMO
+// week-7 [wednesday] :> node game.js
+// He's in position 5!
+// You missed! Look out!
+// keep throwing!
+// He's in position 3!
+// You missed! Look out!
+// keep throwing!
+// He's in position 1!
+// You missed! Look out!
+// keep throwing!
+// He's in position 2!
+// Direct Hit! 1,000,000 Points!
+// Trump HP:20
+// He's in position 2!
+// Direct Hit! 1,000,000 Points!
+// Trump HP:10
+// He's in position 2!
+// Direct Hit! 1,000,000 Points!
+// Trump HP:0
+// Three In A Row! You Win!
+
 
 
 
@@ -68,11 +111,5 @@ var nameTwo = tackle(){
 
 
 // Reflection
-//
-//
-//
-//
-//
-//
 //
 //
