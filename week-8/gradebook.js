@@ -50,47 +50,80 @@ var average = function(num_array){
   return (sum/num_array.length)
 };
 
-// console.log(average([5, 10, 15, 20]));
+console.log(average([5, 10, 15, 20]));
 
 
 // __________________________________________
 // Refactored Solution
 
-// function gradebook(array_of_students, array_of_grades){
+// var gradebook = {}
 
-//   var gradebook_log = []
-  
-//   for (index in array_of_students) {
-//     var student_name = array_of_students[index];
-//     var student_grade = array_of_grades[index];
-//     var student_record = {};
-//     student_record[student_name] = student_grade;
-//     gradebook_log.push(student_record);
-//   };
-// } 
-// // var gradebook = {}
-
-// // function makeGradebook(students, scores){
-// //   for (var i = 0; i < students.length; i++){
-// //     gradebook[students[i]] = scores[i];
-// //   }
-// // }
-
-// gradebook.addScore = function(name, score) {
-//     gradebook[name]['testScores'].push(score)
-//   };
-
-// gradebook.getAverage = function(name){
-//  return average(gradebook[name]['testScores'])
-// };
-
-// var average = function(num_array){
-//   var sum = 0
-//   for(var i = 0; i < num_array.length; i++){
-//     sum += num_array[i]
+// function makeGradebook(students, scores){
+//   for (var i = 0; i < students.length; i++){
+//     gradebook[students[i]] = scores[i];
 //   }
-//   return (sum/num_array.length)
+// }
+
+// function gradebook(array_of_students, array_of_grades) {
+  
+//   //create function that combines student names and grades into a new object
+//   this.createGradebook = function() {
+//     var gradebook_array = [];
+//     for (var index in array_of_students) {
+//       var student_name = array_of_students[index];
+//       var student_grade = array_of_grades[index];
+//       var student_record = {};
+//       student_record[student_name] = student_grade;
+//       gradebook_array.push(student_record);
+//     }   
+//     return gradebook_array;
+//   }
+  
+//   // Call the createGradebook() function, to create a new gradebook instance object
+//   var current_gradebook = this.createGradebook();
+  
+//   // function to push new scores into a student's record
+//   this.addScore = function(name, score) {
+//     // iterate over each student record
+//     for (var index in current_gradebook) {  
+//       // if name fed as method argument matches name in student record
+//       if (current_gradebook[index][name]) {
+//         // push score provided as method argument into student record
+//         current_gradebook[index][name].push(score);
+//         console.log("Updated scores for " + name + ": " + current_gradebook[index][name])
+//       }
+//     }
+//     return current_gradebook;
+//   };
+  
+//   // function to calculate an average score for a student
+//   this.getAverage = function(name) {
+//     // iterate over each student record    
+//     for (var index in current_gradebook) {
+//       // if name fed as method argument matches name in student record      
+//       if (current_gradebook[index][name]) { 
+//         // run the average function on that students record
+//         console.log("Average score for " + name + ": " + average(current_gradebook[index][name]));
+//         return (average(current_gradebook[index][name]) );
+//       }
+//     }  
+//   }
+  
+//     function average(num_array){
+//       var sum = 0
+//       for(var i = 0; i < num_array.length; i++){
+//         sum += num_array[i]
+//       }
+//       return (sum/num_array.length)
+//     };      
+
 // };
+
+// //DRIVER CODE
+// // create a new instance of a gradebook object and call methods on it.
+// var gradebookOne = new gradebook(students, scores)
+// gradebookOne.addScore("Susan", 90)
+// gradebookOne.getAverage("Susan")
 
 
 

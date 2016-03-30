@@ -18,4 +18,5 @@ A many-to-many database is when a join table is used to link two tables where th
 ##When would you use a many-to-many database? (Think generally, not in terms of the example you created).
 A many to many databse could be used in surveys where participants have lots of combinations to select.
 
-##What is confusing about database schemas? What makes sense? It is difficult to wrap your head around just the column section of several tables and make those relate in a way that makes sense. 
+##What is confusing about database schemas? What makes sense? 
+It is difficult to wrap your head around just the column section of several tables and make those relate in a way that makes sense. But when it does make sense it is certainly nice to have a graphic representation to seal the deal. 
