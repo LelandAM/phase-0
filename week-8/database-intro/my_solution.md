@@ -27,11 +27,13 @@
 Databases exist to organize large amounts of information in a way where it can be accessed, sorted, or combined.
 
 ### What is a one-to-many relationship?
-A one-to-many relationship refers to an umbrella classification and the parts it classifies. This could be mid-western states, post-rock bands, foods that are green, a list of tea-party voters and so on. 
+A one-to-many relationship refers to  
 
 ### What is a primary key? What is a foreign key? How can you determine which is which?
+A primary key is a field (column) that is attached to the table to identify each row, like an id number. A foreign key is an column in a table that displays values from another table, in a schema they are linked. A schema is helpful is determining how they all relate. 
 
 ### How can you select information out of a SQL database? What are some general guidelines for that?
+To core command to get information out of a SQL database is "SELECT ___ FROM ____" where the first blank is the field or fields you want and the second is the database you are pulling from. After that you may add conditions or sorting methods for what or how it is displayed. 
 
 
 
