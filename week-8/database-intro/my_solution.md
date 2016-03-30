@@ -21,13 +21,16 @@
 10. SELECT region_name, state_name FROM regions, states ORDER BY region_id ASC;
 
 ## Schema
+[![Clueless Schema with Foreign Key](clueless_schema.png)](clueless_schema.png)
 
 ## Reflection
 ### What are databases for?
 Databases exist to organize large amounts of information in a way where it can be accessed, sorted, or combined.
 
 ### What is a one-to-many relationship?
-A one-to-many relationship refers to  
+A one-to-many relationship is one of three types of database relationships between tables, the one-to-one, one-to-many, and many-to-many. 
+
+The one-to-many relationship means a row from one table can have multiple matching rows in another table. This could be the state or country field in a table of billing addresses, where there is a set amount of possibilities that exist in the table linked with a foreign key.
 
 ### What is a primary key? What is a foreign key? How can you determine which is which?
 A primary key is a field (column) that is attached to the table to identify each row, like an id number. A foreign key is an column in a table that displays values from another table, in a schema they are linked. A schema is helpful is determining how they all relate. 
