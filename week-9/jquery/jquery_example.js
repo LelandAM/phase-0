@@ -54,6 +54,9 @@ $('body').css({'background-color': 'pink'})
 
 
 
-// What is jQuery?
+// What is jQuery? 
+//A JavaScript library useful for manipulating html
 // What does jQuery do for you?
+//I think of JQuery as css for movement.
 // What did you learn about the DOM while working on this challenge?
+//Learned soe jquery things to try out with it like mouseover, mouseleave and animate. 
